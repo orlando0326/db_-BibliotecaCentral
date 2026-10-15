@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Central - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cadastrolivro.js"></script>
+    <script src="armazenamento.js"></script>
+</head>
+<body>
+
+    <header class="sidebar">
+        <nav class="nav-menu">
+            <img src="Emblema da Biblioteca Central Fantástica (1).png"
+                 alt="Logo da Biblioteca Central" class="img-logo">
+
+            <ul class="lista-menu">
+                <li><a href="index.html">Inicial</a></li>
+                <li><a href="cadastrolivro.html">Cadastro de livros</a></li>
+                <li><a href="listagemlivro.html">Livros disponíveis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cadastro de Livros</h1>
+
+        <form id="bookForm">
+
+            <label for="codigo">Código numérico único:</label>
+            <input type="number" id="codigo" name="codigo"
+                   min="1" step="1" placeholder="Ex.: 1001" required>
+
+            <label for="title">Título do Livro:</label>
+            <input type="text" id="title" name="title"
+                   placeholder="Digite o título do livro" required>
+
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor"
+                   placeholder="Digite o nome do autor" required>
+
+            <label for="ano">Ano de publicação:</label>
+            <input type="number" id="ano" name="ano"
+                   min="1" step="1" placeholder="Ex.: 2020" required>
+
+            <button type="submit">Cadastrar Livro</button>
+
+        </form>
+    </main>
+
+    <script src="cadastro.js"></script>
+
+</body>
+</html>

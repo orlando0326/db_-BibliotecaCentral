@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Central | Livros Disponíveis</title>
+
+    <link rel="stylesheet" href="listagemlivro.css">
+    <script src="listagem.js"></script>
+    <script src="armazenamento.js"></script>
+</head>
+<body>
+
+    <header class="sidebar">
+        <nav class="nav-menu">
+
+            <img
+                src="Emblema da Biblioteca Central Fantástica (1).png"
+                alt="Logo da Biblioteca Central"
+                class="img-logo"
+            >
+
+            <ul class="lista-menu">
+                <li>
+                    <a href="index.html">Inicial</a>
+                </li>
+
+                <li>
+                    <a href="cadastrolivro.html">Cadastro de livros</a>
+                </li>
+
+                <li>
+                    <a href="listagemlivro.html" class="ativo">
+                        Livros disponíveis
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Conhecimento sem limites</p>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <section class="cabecalho">
+            <span class="subtitulo">BIBLIOTECA CENTRAL</span>
+
+            <h1>Livros Disponíveis</h1>
+
+            <p>
+                Explore nosso acervo e encontre sua próxima leitura.
+            </p>
+        </section>
+
+        <section class="painel-listagem">
+
+            <div class="titulo-painel">
+                <div>
+                    <h2>Acervo da Biblioteca</h2>
+                    <p>Confira as informações dos livros cadastrados.</p>
+                </div>
+
+                <a href="cadastrolivro.html" class="btn-novo">
+                    + Cadastrar Livro
+                </a>
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Título do Livro</th>
+                            <th>Autor</th>
+                            <th>Ano de Publicação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaLivros">
+                    
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="observacao">
+         
+            </p>
+
+        </section>
+
+        <footer class="rodape">
+            <p>Biblioteca Central © 2026 — Um universo de histórias.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
